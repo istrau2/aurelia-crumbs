@@ -1,0 +1,10 @@
+<template>
+    <div class="aurelia-crumbs">
+        <span repeat.for="instruction of instructions">
+            <span if.one-time="instruction.config.title">
+                <span if.one-time="$index !== 0" innerhtml.one-time="config.separator || '>'"></span>&nbsp;
+                <a href="javascript:void(0)" click.trigger="navigateToRoute(instruction)">${instruction.config.title}</a>
+            </span>
+        </span>
+    </div>
+</template>
