@@ -2,6 +2,7 @@
  * Created by istrauss on 11/15/2016.
  */
 
+import './aurelia-crumbs.css';
 import _clone from 'lodash/clone';
 import {EventAggregator} from 'aurelia-event-aggregator';
 import {inject, bindable} from 'aurelia-framework';
