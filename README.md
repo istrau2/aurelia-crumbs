@@ -53,7 +53,7 @@ export class App {
 }
 ```
 
-In order for a route to be rendered by the breadcrumb widget, the route's config have breadcrumb === true and a truthy title.
+In order for a route to be rendered by the breadcrumb widget, the route's config must have breadcrumb === true and a truthy title.
 
 Then, add the custom element somewhere in your application:
 ```html
@@ -63,7 +63,7 @@ Then, add the custom element somewhere in your application:
 
 ## Configuration
 The widget takes an optional config object which has one parameter:
-1) Separator: valid html string.
+1) separator: string (valid html to separate crumbs).
 
 ## Dynamic route titles
 
