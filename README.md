@@ -19,7 +19,7 @@ aurelia.use
 In your route declarations (that you pass to your router), you can now include an option breadcrumb property:
 ```javascript
 
-const routes: [
+const routes = [
     {
         route: ['route1'],
         name: 'route1',
@@ -69,7 +69,9 @@ The widget takes an optional config object which has one parameter:
 
 If you want to dynamically change a route title in the widget, you can do the following:
 ```javascript
-@inject(AureliaRouter)
+import {Router} from 'aurelia-router';
+
+@inject(Router)
 export class SomeRoute {
     constructor(router) {
         this.router = router;
